@@ -7,12 +7,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 60vh;
+    min-height: 100vh;
 }
 
 .container {
-    width: 0%;
-    max-width: 500px; 
+    width: 80%;
+    max-width: 400px; 
+    margin-top: -20vh; 
 }
 
 form {
@@ -33,7 +34,7 @@ label {
 
 input[type="text"],
 input[type="password"] {
-    width: 88%;
+    width: 90%; 
     padding: 10px;
     margin-bottom: 20px;
     border: none;

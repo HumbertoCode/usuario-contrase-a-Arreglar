@@ -9,12 +9,16 @@ class Sesion {
 
     validar() {
         if (this.usuario === this.usuarioRegistrado && this.pass === this.contraseñaRegistrada) {
-            alert('Inicio de sesión exitoso');
+           window.location.href= "perfil.html";
             this.redirigirPerfil();
         } else if (this.usuario !== this.usuarioRegistrado || this.pass !== this.contraseñaRegistrada) {
             alert('Usuario o contraseña incorrectos');
-        }
+        }else if (this.usuarioRegistrado !== this.contraseñaRegistrada){
+                alert("contraseña incorrecta")
+        } else {alert("Usuario Incorrecto")}
+    
     }
+
 
     redirigirPerfil() {
         window.location.href = perfil.html;
@@ -34,15 +38,6 @@ function login() {
 
 
 
-function mostrarInicioSesionExitoso() {
-    Toastify({
-        text: "Inicio de sesión exitoso",
-        duration: 3000,
-        close: true, 
-        gravity: "top", 
-        position: "center", 
-        backgroundColor: "#4CAF50", 
-    }).showToast();
-}
+
 
 
