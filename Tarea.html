@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesión</title>
+    <link rel="stylesheet" href="/pruebas/styles.css">
+</head>
+<body>
+    <div>
+        <h2>Iniciar sesión</h2>
+        <form id="loginForm">
+            <label for="usuario">Usuario:</label><br>
+            <input type="text" id="usuario" name="usuario" required><br>
+        
+            <label for="pass">Contraseña:</label><br>
+            <input type="password" id="pass" name="pass" required><br>
+        
+            <button type="button" onclick="login()">Iniciar sesión</button>
+        </form>
+    </div>
+    
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</body>
+</html>
